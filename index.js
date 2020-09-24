@@ -130,7 +130,7 @@ document.getElementById("getCityWeather").addEventListener("submit", (e) => {
                 </div>
           
                 <div class="city-weather">
-                    <h4>${weatherMain}</h4>
+                    <h4>${weatherMain}:</h4>
                         <img class="city-icon" src="${iconIMG}" width="150" height="150"/>
                         <h5>${weatherDesc}</h5> 
                     <hr>
