@@ -11,13 +11,18 @@
     />
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/ilb6asc.css" />
+    <!-- <script src="localweather.js">document.onload=(e, yourWeather());</script> -->
     <title>Document</title>
   </head>
   <body>
     <div class="container d-flex" id="panel">
-      <div class="container d-flex align-items-center" id="titlePanel">
-        <h1>Weather</h1>
+      <div class="container d-flex justify-content-center" id="titlePanel">
+        <div class="row justify-content-center" id="localHeader">
+           <!-- <h2>Local</h2> -->
+           <h1>Weather</h1>
       </div>
+      </div>
+      
 
       <div class="container d-flex justify-content-center" id="functionPanel">
        <div class="row"> 
@@ -38,7 +43,7 @@
           </div>
         </div>
           <div class="container">
-            <div id="cityCard" class="list-group d-flex"></div>
+            <div id="cityCard" class="list-group d-flex justify-content-center"></div>
           </div>
         </div>
       </div>

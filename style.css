@@ -22,9 +22,20 @@ body {
   min-width: 40%;
 }
 
-#titlePanel h1 {
+#localHeader {
+  margin-top: 25px;
+}
+
+#localHeader h2 {
+  font-size: 55px;
+  font-family: storefront-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #062f5d;
+}
+
+#localHeader h1 {
   font-size: 45px;
-  margin-left: 10%;
   color: #6bc7f5;
   font-family: aviano-flare, sans-serif;
   font-weight: 700;
