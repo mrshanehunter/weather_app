@@ -38,7 +38,7 @@ body {
 }
 
 #heading h1 {
-  font-size: 55px;
+  font-size: 75px;
   color: #6bc7f5;
   font-family: aviano-flare, sans-serif;
   font-weight: 700;
@@ -57,6 +57,25 @@ body {
 }
 
 #sysDate h2 {
+  font-size: 45px;
+  color: #6bc7f5;
+  font-family: aviano-flare, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-text-stroke: 3px #062f5d;
+  margin: 0;
+  padding: 0;
+}
+
+#sysTime {
+  display: flex;
+  justify-content: center;
+  min-width: 90%;
+  max-height: 15%;
+  align-items: center;
+}
+
+#sysTime h2 {
   font-size: 45px;
   color: #6bc7f5;
   font-family: aviano-flare, sans-serif;
