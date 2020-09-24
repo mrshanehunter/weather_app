@@ -26,11 +26,11 @@ body {
   text-align: center;
   min-width: 90%;
   max-height: 20%;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 #heading h2 {
-  font-size: 70px;
+  font-size: 55px;
   font-family: storefront-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -38,7 +38,7 @@ body {
 }
 
 #heading h1 {
-  font-size: 75px;
+  font-size: 45px;
   color: #6bc7f5;
   font-family: aviano-flare, sans-serif;
   font-weight: 700;
@@ -57,12 +57,11 @@ body {
 }
 
 #sysDate h2 {
-  font-size: 45px;
-  color: #6bc7f5;
+  font-size: 25px;
+  color: #062f5d;
   font-family: aviano-flare, sans-serif;
   font-weight: 700;
   font-style: normal;
-  -webkit-text-stroke: 3px #062f5d;
   margin: 0;
   padding: 0;
 }
@@ -76,20 +75,19 @@ body {
 }
 
 #sysTime h2 {
-  font-size: 45px;
-  color: #6bc7f5;
+  font-size: 20px;
+  color: #062f5d;
   font-family: aviano-flare, sans-serif;
   font-weight: 700;
   font-style: normal;
-  -webkit-text-stroke: 3px #062f5d;
   margin: 0;
-  padding: 0;
+  padding: 5px;
 }
 
 #local {
   min-width: 80%;
-  margin-bottom: 200px;
-  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 #local .card {
@@ -98,7 +96,7 @@ body {
 
 #local h2 {
 
-font-size: 45px;
+font-size: 25px;
 color: #062f5d;
 font-family: poppins, sans-serif;
 font-weight: 500;
@@ -107,7 +105,7 @@ font-style: normal;
 
 #local h3 {
 
-  font-size: 35px;
+  font-size: 20px;
   color: #062f5d;
   font-family: poppins, sans-serif;
   font-weight: 500;
@@ -116,7 +114,7 @@ font-style: normal;
 
   #local h5 {
 
-    font-size: 25px;
+    font-size: 15px;
     color: #062f5d;
     font-family: poppins, sans-serif;
     font-weight: 500;
@@ -132,7 +130,7 @@ hr {
   font-family: poppins, sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 40px;
+  font-size: 20px;
   /* display: flex;
   flex-direction: row; */
   background-color: #0a1f44;
@@ -145,19 +143,19 @@ hr {
   flex-wrap: wrap;
   flex-basis: 1;
   color: #0E2A59;
-  font-size: 60px;
+  font-size: 30px;
   text-align: justify;
 }
 
 #inputCard {
   margin-top: 45%;
-  margin-left: 35%;
+  margin-left: 22.5%;
   display: inline-flex;
   align-items: center;
   padding: 5px;
   background-color: #0a1f44;
   color: #ffffff;
-  max-height: 70px;
+  max-height: 35px;
   position: absolute;
   top: 0;
   left: 0;
@@ -168,13 +166,13 @@ hr {
 }
 
 #getCityWeather {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .inputStyle {
   border: solid 3px #6bc7f5;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #cityCard {
@@ -190,14 +188,14 @@ hr {
 }
 
 #cityCard h3 {
-  font-size: 45px;
+  font-size: 20px;
 }
 
 #cityCard h4 {
-  font-size: 35px;
+  font-size: 15px;
 }
 
 #cityCard h5 {
-  font-size: 30px;
+  font-size: 12.5px;
 }
 

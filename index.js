@@ -24,7 +24,7 @@ function geoFindMe() {
         const localDesc = data.weather[0].main;
         const localDesc1 = data.weather[0].description;
         const localIcon = data.weather[0].icon;
-        const localIconIMG = `http://openweathermap.org/img/wn/${localIcon}.png`;
+        const localIconIMG = `https://openweathermap.org/img/wn/${localIcon}.png`;
 
         console.log(localName, localTemp, localFeel, localDesc);
 
@@ -115,7 +115,7 @@ document.getElementById("getCityWeather").addEventListener("submit", (e) => {
       const weatherDesc = data.weather[0].description;
       const feelsLike = data.main.feels_like;
       const icon = data.weather[0].icon;
-      const iconIMG = `http://openweathermap.org/img/wn/${icon}.png`;
+      const iconIMG = `https://openweathermap.org/img/wn/${icon}.png`;
 
       //   const { main, name, weather } = data;
       //   const icon = `https://s3-us-west-2.amazonaws.com/s.cpdn.io/162656/${weather[0]["icon"]}.svg`;
@@ -131,7 +131,7 @@ document.getElementById("getCityWeather").addEventListener("submit", (e) => {
           
                 <div class="city-weather">
                     <h4>${weatherMain}:</h4>
-                        <img class="city-icon" src="${iconIMG}" width="150" height="150"/>
+                        <img class="city-icon" src="${iconIMG}" width="100" height="100"/>
                         <h5>${weatherDesc}</h5> 
                     <hr>
                     <h5>Feels like: ${Math.round(feelsLike)} &deg;C</h5>
