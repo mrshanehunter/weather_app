@@ -7,44 +7,109 @@ body {
   background-repeat: no-repeat;
 }
 
-.h1 {
-  font-family: aviano-flare, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 #panel {
   min-width: 100%;
   display: flex;
 }
 
 #titlePanel {
-  min-width: 40%;
+  max-width: 40%;
 }
 
-#localHeader {
-  margin-top: 25px;
+.row {
+  position: relative;
 }
 
-#localHeader h2 {
-  font-size: 55px;
+#heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 90%;
+  max-height: 20%;
+  margin-top: 200px;
+}
+
+#heading h2 {
+  font-size: 70px;
   font-family: storefront-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #062f5d;
 }
 
-#localHeader h1 {
+#heading h1 {
+  font-size: 55px;
+  color: #6bc7f5;
+  font-family: aviano-flare, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-text-stroke: 3px #062f5d;
+  padding: 0;
+  margin: 0;
+}
+
+#sysDate {
+  display: flex;
+  justify-content: center;
+  min-width: 90%;
+  max-height: 15%;
+  align-items: center;
+}
+
+#sysDate h2 {
   font-size: 45px;
   color: #6bc7f5;
   font-family: aviano-flare, sans-serif;
   font-weight: 700;
   font-style: normal;
-  -webkit-text-stroke: 2px #062f5d;
+  -webkit-text-stroke: 3px #062f5d;
+  margin: 0;
+  padding: 0;
 }
 
+#local {
+  min-width: 80%;
+  margin-bottom: 200px;
+  margin-left: 50px;
+}
+
+#local .card {
+  background-color: rgba(0,0,0,0.01);
+}
+
+#local h2 {
+
+font-size: 45px;
+color: #062f5d;
+font-family: poppins, sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+#local h3 {
+
+  font-size: 35px;
+  color: #062f5d;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  }
+
+  #local h5 {
+
+    font-size: 25px;
+    color: #062f5d;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    }  
+
+hr {
+  color: #062f5d;
+}    
+
 #functionPanel {
-  min-width: 60%;
+  max-width: 60%;
   font-family: poppins, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -53,33 +118,67 @@ body {
   flex-direction: row; */
   background-color: #0a1f44;
   min-height: 100vh;
+  position: relative;
+}
+
+.decorative {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 1;
+  color: #0E2A59;
+  font-size: 60px;
+  text-align: justify;
 }
 
 #inputCard {
-  margin-top: 10%;
+  margin-top: 45%;
+  margin-left: 35%;
   display: inline-flex;
   align-items: center;
   padding: 5px;
   background-color: #0a1f44;
   color: #ffffff;
+  max-height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#inputCard {
+  z-index: 10;
 }
 
 #getCityWeather {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .inputStyle {
   border: solid 3px #6bc7f5;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
-.cityCard {
-  font-family: poppins, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 7px;
-  border: solid 3px #6bc7f5;
+#cityCard {
+  margin-top: 5%;
+  margin-left: 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
+#cityCard {
+  z-index: 10;
+}
+
+#cityCard h3 {
+  font-size: 45px;
+}
+
+#cityCard h4 {
+  font-size: 35px;
+}
+
+#cityCard h5 {
+  font-size: 30px;
+}
+
