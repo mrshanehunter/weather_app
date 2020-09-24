@@ -19,9 +19,27 @@
         <h1>Weather</h1>
       </div>
 
-      <div class="container d-flex align-items-center" id="functionPanel">
-        <div class="inputFields">
-          <input type="text" placeholder="placeholder" class="inputStyle" />
+      <div class="container d-flex justify-content-center" id="functionPanel">
+       <div class="row"> 
+        <div class="card" id="inputCard">
+          <div class="inputFields">
+            <form id="getCityWeather">
+              <label for="cityName">City:</label>
+              <input
+                id="cityName"
+                type="text"
+                placeholder="Enter a city name"
+                class="inputStyle"
+              />
+              <button type="submit" class="btn btn-outline-light">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+          <div class="container">
+            <div id="cityCard" class="list-group d-flex"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -40,5 +58,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
