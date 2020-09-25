@@ -139,7 +139,10 @@ document.getElementById("getCityWeather").addEventListener("submit", (e) => {
   const queryData = `${cityValue}&appid=${apiKey}&units=metric`;
 
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${queryData}`)
-    .then((response) => response.json())
+    .then((response) => {if (response.status >= 200 && response.status <=299) {
+    
+    response.json(); } else {throw Error(response.statusText);}
+    })
     .then((data) => {
       console.log(data);
       const name = data.name;
@@ -173,7 +176,10 @@ document.getElementById("getCityWeather").addEventListener("submit", (e) => {
         `;
       listGroupItem.innerHTML = html;
       listGroupItem.appendChild("list-group");
-    });
+    })
+    .catch((error) => {
+    alert ("Invalid input, please try again", error);
+  });
 });
 
 {
