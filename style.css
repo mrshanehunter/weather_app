@@ -54,6 +54,7 @@ body {
   min-width: 90%;
   max-height: 15%;
   align-items: center;
+  
 }
 
 #sysDate h2 {
@@ -66,28 +67,21 @@ body {
   padding: 0;
 }
 
-#sysTime {
-  display: flex;
-  justify-content: center;
-  min-width: 90%;
-  max-height: 15%;
-  align-items: center;
-}
-
-#sysTime h2 {
-  font-size: 20px;
-  color: #062f5d;
+.clock {
+  font-size: 1.5vw;
+  text-align: center;
   font-family: aviano-flare, sans-serif;
   font-weight: 700;
   font-style: normal;
-  margin: 0;
-  padding: 5px;
+  margin-top: 2%;
+  min-width: 90%;
 }
 
 #local {
   min-width: 80%;
   margin-bottom: 20px;
-  margin-left: 15px;
+  margin-left: 25px;
+  
 }
 
 #local .card {

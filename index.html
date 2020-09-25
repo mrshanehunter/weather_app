@@ -18,26 +18,25 @@
     <div class="container d-flex" id="panel">
       <div class="container d-flex justify-content-center" id="titlePanel">
         <div class="row">
-            <div id="heading">
-              <h2>Local</h2>
-              <h1>Weather</h1>
-            </div>
-              <div class="d-flex justify-content-center" id="sysDate">
-                <h2>
-                  <script>
-                    document.write(new Date().toLocaleDateString());
-                  </script>
-                </h2>
-              </div>
-                  <div class="d-flex justify-content-center" id="sysTime">
-                  <h2>
-                    <script>
-                      document.write(new Date().toLocaleTimeString());
-                    </script>
-                  </h2>
-                  </div>
+          <div id="heading">
+            <h2>Local</h2>
+            <h1>Weather</h1>
+          </div>
           
-          <div id="local" class="list-grou d-flex justify-content-center"></div>
+
+          <div class="d-flex justify-content-center" id="sysDate">
+            <h2>
+              <script>
+                document.write(new Date().toLocaleDateString());
+              </script>
+            </h2>
+          </div>
+
+          <div class="d-flex w-100">
+            <h3 id="MyClockDisplay" class="clock" onload="showTime()"></h3>
+          </div>
+
+          <div id="local" class="list-group d-flex justify-content-center"></div>
         </div>
       </div>
 
@@ -67,6 +66,7 @@
                   type="text"
                   placeholder="Enter a city name"
                   class="inputStyle m-2"
+                  onfocus="this.value=''"
                 />
                 <button type="submit" class="btn btn-outline-light m-2">
                   Submit
