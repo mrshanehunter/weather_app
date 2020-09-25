@@ -106,9 +106,18 @@ font-style: normal;
   font-style: normal;
   }
 
+  #local h4 {
+
+    font-size: 18px;
+    color: #062f5d;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    }
+
   #local h5 {
 
-    font-size: 15px;
+    font-size: 16px;
     color: #062f5d;
     font-family: poppins, sans-serif;
     font-weight: 500;
@@ -143,7 +152,7 @@ hr {
 
 #inputCard {
   margin-top: 45%;
-  margin-left: 22.5%;
+  margin-left: 25%;
   display: inline-flex;
   align-items: center;
   padding: 5px;
@@ -175,6 +184,7 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
+  min-width: 25%;
 }
 
 #cityCard {
@@ -185,11 +195,25 @@ hr {
   font-size: 20px;
 }
 
+
+#cityCard h2 {
+  font-size: 18px;
+  
+}
+
 #cityCard h4 {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 #cityCard h5 {
-  font-size: 12.5px;
+  font-size: 14px;
+}
+
+
+.city-name sup {
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  color: var(--text_light);
+  background: var(--cyan);
 }
 

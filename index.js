@@ -74,13 +74,13 @@ function geoFindMe() {
 
           <div class="d-flex justify-content-center">
             <div class="local-city">
-                <h3><strong>${localName}</strong></h3>
+                <h2><strong>${localName}</strong></h2>
             </div>
         </div>  
 
         <div class="d-flex justify-content-center">
         <div class="local-feels-like">
-        <h5>Feels like: ${Math.round(localFeel)}&#176;C</h5>
+        <h4>Feels like: ${Math.round(localFeel)}&#176;C</h4>
         </div>
         </div>
         
@@ -133,16 +133,25 @@ const cityName = document.querySelector("#cityName");
 
 const listGroupItem = document.querySelector("#cityCard");
 
+
+
+
+
+
 document.getElementById("getCityWeather").addEventListener("submit", (e) => {
   e.preventDefault();
   let cityValue = cityName.value;
   const queryData = `${cityValue}&appid=${apiKey}&units=metric`;
 
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${queryData}`)
-    .then((response) => {if (response.status >= 200 && response.status <=299) {
+  if (cityValue === "") {
+    alert("Warning: Invalid Entry - please try again")
     
-    response.json(); } else {throw Error(response.statusText);}
-    })
+  } else {
+    
+  
+
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${queryData}`)
+    .then((response) => response.json())
     .then((data) => {
       console.log(data);
       const name = data.name;
@@ -150,18 +159,16 @@ document.getElementById("getCityWeather").addEventListener("submit", (e) => {
       const weatherMain = data.weather[0].main;
       const weatherDesc = data.weather[0].description;
       const feelsLike = data.main.feels_like;
+      const country = data.sys.country;
       const icon = data.weather[0].icon;
       const iconIMG = `https://openweathermap.org/img/wn/${icon}.png`;
 
-      //   const { main, name, weather } = data;
-      //   const icon = `https://s3-us-west-2.amazonaws.com/s.cpdn.io/162656/${weather[0]["icon"]}.svg`;
-      //   const li = document.createElement("li");
-      //   listGroupItem.classList.add("city");
+    
       const html = `
-        <div class="list-group-item card card_layout w-100 data-name="${name}" style="box-shadow: 5px 5px 7px rgba(202,200,200,0.45"> 
-            <h3 class="city-name" data-name="${name}"><strong>${name}</strong></h3>
+        <div class="list-group-item card card_layout data-name="${name}" style="box-shadow: 5px 5px 7px rgba(202,200,200,0.45"> 
+           <h3 class="city-name" data-name="${name},${country}">${name}  <sup>${country}</sup></h3>
             <hr>
-                <div class="city-temp">
+                <div class="city-temp"> 
                     <h3>${Math.round(temp)} &deg;C</h3>
                 </div>
           
@@ -175,15 +182,14 @@ document.getElementById("getCityWeather").addEventListener("submit", (e) => {
         </div>
         `;
       listGroupItem.innerHTML = html;
-      listGroupItem.appendChild("list-group");
-    })
-    .catch((error) => {
-    alert ("Invalid input, please try again", error);
-  });
-});
+      listGroupItem.appendChild(list-group);
+     
+    });
+      
+    }
+  });   
 
-{
+
   /* <div>
           <img class="city-icon" src="${icon}" alt="${weather[0]["description"]}">
         </div> */
-}
